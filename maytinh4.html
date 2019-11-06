@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		button{
+			width: 100px;
+			height: 50px;
+			padding-top: 5px;
+		}
+		input{
+
+			width: 408px;
+			height: 30PX;
+		}
+	</style>
+	
+</head>
+<body>
+	<input type="text" id="value"><br>
+	<input type="" name="" id="result">
+	<button style="width: 308px;">C</button>
+	<button>/</button><br>
+	<button onclick="mot()">1</button>
+	<button onclick="hai()">2</button>
+	<button onclick="ba()">3</button>
+	<button >*</button><br>
+	<button onclick="bon()">4</button>
+	<button onclick="nam()">5</button>
+	<button onclick="sau()">6</button>
+	<button onclick="">-</button><br>
+	<button onclick="bay()">7</button>
+	<button onclick="tam()">8</button>
+	<button onclick="chin()">9</button>
+	<button onclick="cong()">+</button><br>
+	<button onclick="khong()" style="width: 308px;">0</button>
+	<button onclick="bang()">=</button>
+	
+	<script type="text/javascript">
+    var ca = document.getElementById("value");
+    function mot(){
+       ca.value += "1";
+    }
+     function hai(){
+       ca.value += "2";
+    }
+    function hai(){
+       ca.value += "2";
+    }
+    function ba(){
+       ca.value += "3";
+    }
+    function bon(){
+       ca.value += "4";
+    }
+    function nam(){
+       ca.value += "5";
+    }
+    function sau(){
+       ca.value += "6";
+    }
+    function bay(){
+       ca.value += "7";
+    }
+    function tam(){
+       ca.value += "8";
+    }
+    function chin(){
+       ca.value += "9";
+    }
+    function khong(){
+       ca.value += "0";
+    }
+    function cong(){
+       ca.value += "+";
+    }
+    function bang(){
+    	var str = document.getElementById("value").value;
+    	console.log(arr);
+    	var arr = str.split("+");
+		console.log(arr);
+		var sum = 0;
+		for( var i = 0; i< arr.length; i++){
+		 	sum += parseInt(arr[i]);
+		 }
+		console.log(sum);
+		document.getElementById("result").value  = sum
+    }
+	</script>
+	
+</body>
+</html>
